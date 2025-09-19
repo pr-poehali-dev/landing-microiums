@@ -22,13 +22,13 @@ export default function Index() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Icon name="CreditCard" className="text-primary" size={32} />
-            <h1 className="text-2xl font-bold text-gray-900">МикроЗайм</h1>
+            <span className="text-2xl font-bold text-gray-900">МикроЗайм</span>
           </div>
           <nav className="hidden md:flex space-x-6">
             <a href="#home" className="text-gray-700 hover:text-primary transition-colors">Главная</a>
+            <a href="#about" className="text-gray-700 hover:text-primary transition-colors">О займах</a>
             <a href="#requirements" className="text-gray-700 hover:text-primary transition-colors">Требования</a>
             <a href="#faq" className="text-gray-700 hover:text-primary transition-colors">FAQ</a>
-            <a href="#security" className="text-gray-700 hover:text-primary transition-colors">Безопасность</a>
           </nav>
         </div>
       </header>
@@ -38,13 +38,11 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-fade-in">
-              <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Займ до
-                <span className="text-primary block">500 000 ₽</span>
-                за 15 минут
-              </h2>
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                Микрозаймы онлайн на карту мгновенно без отказа – получить микрозайм быстро и без процентов
+              </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Быстрое одобрение без справок и поручителей. Деньги на карту уже сегодня.
+                В современном мире финансовые трудности могут возникнуть неожиданно. Когда нужны деньги срочно, микрозайм становится оптимальным решением. Наш сервис поможет вам быстро найти и оформить микрозаем онлайн на выгодных условиях без лишних формальностей.
               </p>
               
               <div className="grid grid-cols-3 gap-6 pt-6">
@@ -52,22 +50,22 @@ export default function Index() {
                   <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
                     <Icon name="Clock" className="text-primary" size={28} />
                   </div>
-                  <p className="font-semibold text-gray-900">15 минут</p>
-                  <p className="text-sm text-gray-600">на рассмотрение</p>
+                  <p className="font-semibold text-gray-900">5 минут</p>
+                  <p className="text-sm text-gray-600">рассмотрение</p>
                 </div>
                 <div className="text-center">
                   <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
                     <Icon name="Percent" className="text-primary" size={28} />
                   </div>
-                  <p className="font-semibold text-gray-900">От 0.5%</p>
-                  <p className="text-sm text-gray-600">в день</p>
+                  <p className="font-semibold text-gray-900">Без %</p>
+                  <p className="text-sm text-gray-600">первый займ</p>
                 </div>
                 <div className="text-center">
                   <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
-                    <Icon name="Smartphone" className="text-primary" size={28} />
+                    <Icon name="CreditCard" className="text-primary" size={28} />
                   </div>
-                  <p className="font-semibold text-gray-900">Онлайн</p>
-                  <p className="text-sm text-gray-600">24/7</p>
+                  <p className="font-semibold text-gray-900">На карту</p>
+                  <p className="text-sm text-gray-600">мгновенно</p>
                 </div>
               </div>
             </div>
@@ -75,7 +73,7 @@ export default function Index() {
             <div className="animate-scale-in">
               <Card className="shadow-2xl border-0 bg-white/95 backdrop-blur-sm">
                 <CardHeader className="bg-gradient-to-r from-primary to-secondary text-white rounded-t-lg">
-                  <CardTitle className="text-2xl text-center">Получить займ</CardTitle>
+                  <CardTitle className="text-2xl text-center">Получить микрозайм</CardTitle>
                   <CardDescription className="text-center text-white/90">
                     Заполните заявку за 2 минуты
                   </CardDescription>
@@ -123,24 +121,148 @@ export default function Index() {
         </div>
       </section>
 
+      {/* О микрозаймах */}
+      <section id="about" className="py-20 px-4 bg-white/50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid lg:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Что такое микрозайм и его преимущества</h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Микрозайм – это небольшая сумма денег, которую можно получить на короткий срок под минимальные проценты или вовсе без них. В отличие от банковских кредитов, микрозаймы выдаются быстро и с минимальными требованиями к заемщику.
+              </p>
+              
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-gray-900">Основные преимущества микрозаймов:</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Check" className="text-green-500" size={20} />
+                    <span>Быстрое рассмотрение заявки – от 5 минут</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Check" className="text-green-500" size={20} />
+                    <span>Минимальный пакет документов</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Check" className="text-green-500" size={20} />
+                    <span>Возможность получить микрозайм без процентов для новых клиентов</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Check" className="text-green-500" size={20} />
+                    <span>Микрозайм на карту в любое время суток</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Check" className="text-green-500" size={20} />
+                    <span>Не требуется справка о доходах</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Как взять микрозайм онлайн без отказа</h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Чтобы взять микрозаем через интернет, вам потребуется:
+              </p>
+              
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">1</div>
+                  <span>Выбрать надежную микрофинансовую организацию</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">2</div>
+                  <span>Заполнить онлайн-заявку на сайте</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">3</div>
+                  <span>Указать данные паспорта и банковской карты</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">4</div>
+                  <span>Дождаться одобрения (обычно 5-15 минут)</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">5</div>
+                  <span>Получить микрозайм на карту мгновенно</span>
+                </div>
+              </div>
+              
+              <p className="text-lg text-gray-600 mt-6">
+                Современные МФО предлагают микрозаймы онлайн без отказа даже клиентам с плохой кредитной историей. Главное условие – достижение совершеннолетия и наличие российского паспорта.
+              </p>
+            </div>
+          </div>
+
+          {/* Блок без процентов */}
+          <div className="mt-16">
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Микрозаймы без процентов – реальная экономия</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <p className="text-lg text-gray-600 mb-6">
+                  Многие компании предлагают первый микрозаем без процентов для привлечения новых клиентов. Это отличная возможность решить финансовые проблемы абсолютно бесплатно.
+                </p>
+                
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Условия получения микрозайма без процентов:</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Star" className="text-primary" size={20} />
+                    <span>Первое обращение в компанию</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Star" className="text-primary" size={20} />
+                    <span>Сумма до 15 000 рублей</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Star" className="text-primary" size={20} />
+                    <span>Срок возврата до 30 дней</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Icon name="Star" className="text-primary" size={20} />
+                    <span>Своевременное погашение задолженности</span>
+                  </div>
+                </div>
+              </div>
+              
+              <Card className="border-l-4 border-l-primary shadow-lg">
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-3">
+                    <Icon name="CreditCard" className="text-primary" size={24} />
+                    <span>Микрозайм на карту без процентов</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Получить микрозаем без процентов на карту можно круглосуточно. Деньги поступают на банковскую карту в течение нескольких минут после одобрения заявки.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Требования к заемщикам */}
-      <section id="requirements" className="py-20 px-4 bg-white/50">
+      <section id="requirements" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
-          <h3 className="text-4xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
             Требования к заемщикам
-          </h3>
+          </h2>
+          <p className="text-lg text-gray-600 text-center mb-12">
+            Для получения микрозайма необходимо соответствовать базовым требованиям. Справка о доходах не требуется, что делает микрозаймы онлайн доступными для всех категорий граждан, включая пенсионеров, студентов и безработных.
+          </p>
+          
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-l-4 border-l-primary shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-3">
                   <Icon name="User" className="text-primary" size={24} />
-                  <span>Возраст и гражданство</span>
+                  <span>Основные требования</span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-green-500" size={20} />
-                  <span>Возраст от 18 до 75 лет</span>
+                  <span>Возраст от 18 до 70 лет</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-green-500" size={20} />
@@ -148,7 +270,7 @@ export default function Index() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-green-500" size={20} />
-                  <span>Постоянная регистрация</span>
+                  <span>Действующий паспорт</span>
                 </div>
               </CardContent>
             </Card>
@@ -156,218 +278,141 @@ export default function Index() {
             <Card className="border-l-4 border-l-secondary shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-3">
-                  <Icon name="FileText" className="text-secondary" size={24} />
-                  <span>Документы</span>
+                  <Icon name="Smartphone" className="text-secondary" size={24} />
+                  <span>Контакты и карта</span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-green-500" size={20} />
-                  <span>Паспорт РФ</span>
+                  <span>Мобильный телефон</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-green-500" size={20} />
-                  <span>Второй документ (СНИЛС, ИНН)</span>
+                  <span>Банковская карта для получения средств</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-green-500" size={20} />
-                  <span>Действующий номер телефона</span>
+                  <span>Справка о доходах НЕ нужна</span>
                 </div>
               </CardContent>
             </Card>
+          </div>
 
-            <Card className="border-l-4 border-l-primary shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-3">
-                  <Icon name="Wallet" className="text-primary" size={24} />
-                  <span>Финансовые требования</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" className="text-green-500" size={20} />
-                  <span>Стабильный доход</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" className="text-green-500" size={20} />
-                  <span>Банковская карта</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" className="text-green-500" size={20} />
-                  <span>Отсутствие просрочек</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-l-4 border-l-secondary shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-3">
-                  <Icon name="Clock" className="text-secondary" size={24} />
-                  <span>Дополнительно</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" className="text-green-500" size={20} />
-                  <span>Работа от 3 месяцев</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" className="text-green-500" size={20} />
-                  <span>Контактные данные</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" className="text-green-500" size={20} />
-                  <span>Адрес электронной почты</span>
-                </div>
-              </CardContent>
-            </Card>
+          <div className="mt-12">
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">Погашение микрозайма</h2>
+            <p className="text-lg text-gray-600 text-center mb-8">
+              Своевременное погашение микрозаймов – залог положительной кредитной истории. Большинство МФО предлагают удобные способы возврата:
+            </p>
+            
+            <div className="grid md:grid-cols-4 gap-6">
+              <Card className="text-center border-0 shadow-lg bg-white hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <Icon name="Building2" className="text-primary mx-auto mb-3" size={32} />
+                  <p className="font-semibold">Банковским переводом</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center border-0 shadow-lg bg-white hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <Icon name="CreditCard" className="text-primary mx-auto mb-3" size={32} />
+                  <p className="font-semibold">Через терминалы и банкоматы</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center border-0 shadow-lg bg-white hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <Icon name="Monitor" className="text-primary mx-auto mb-3" size={32} />
+                  <p className="font-semibold">Онлайн через личный кабинет</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center border-0 shadow-lg bg-white hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <Icon name="Zap" className="text-primary mx-auto mb-3" size={32} />
+                  <p className="font-semibold">Автоплатежом с карты</p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-20 px-4">
+      <section id="faq" className="py-20 px-4 bg-white/50">
         <div className="container mx-auto max-w-4xl">
-          <h3 className="text-4xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
             Часто задаваемые вопросы
-          </h3>
+          </h2>
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="bg-white rounded-lg shadow-md border-0">
               <AccordionTrigger className="px-6 py-4 text-left text-lg font-semibold hover:no-underline">
-                Как быстро я получу деньги?
+                Что делать при просрочке?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                После одобрения заявки деньги поступают на вашу карту в течение 15 минут. 
-                Рассмотрение заявки занимает до 15 минут в рабочее время.
+                Если возникли трудности с возвратом, важно сразу связаться с кредитором. Многие компании идут навстречу и предлагают: реструктуризацию долга, рассрочку платежа, продление срока займа.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2" className="bg-white rounded-lg shadow-md border-0">
               <AccordionTrigger className="px-6 py-4 text-left text-lg font-semibold hover:no-underline">
-                Какие документы нужны для займа?
+                Как выбрать надежную МФО?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                Для получения займа необходимы только паспорт РФ и второй документ 
-                (СНИЛС, ИНН, водительские права). Справки о доходах не требуются.
+                При выборе компании для получения микрозайма обратите внимание на: наличие лицензии ЦБ РФ, прозрачные условия и тарифы, положительные отзывы клиентов, удобный сайт и мобильное приложение, качество клиентской поддержки.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3" className="bg-white rounded-lg shadow-md border-0">
               <AccordionTrigger className="px-6 py-4 text-left text-lg font-semibold hover:no-underline">
-                Какая процентная ставка?
+                Какие существуют альтернативы микрозаймам?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                Процентная ставка составляет от 0.5% до 2% в день в зависимости от суммы займа, 
-                срока и вашей кредитной истории. Точная ставка указывается в договоре.
+                Если микрозайм не подходит, рассмотрите альтернативные варианты: кредитная карта с льготным периодом, потребительский кредит в банке, займ у друзей или родственников, продажа ненужных вещей, подработка или фриланс.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4" className="bg-white rounded-lg shadow-md border-0">
               <AccordionTrigger className="px-6 py-4 text-left text-lg font-semibold hover:no-underline">
-                Могу ли я досрочно погасить займ?
+                Можно ли получить микрозайм с плохой кредитной историей?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                Да, вы можете погасить займ досрочно в любой момент без комиссий и штрафов. 
-                Проценты начисляются только за фактические дни пользования займом.
+                Да, многие МФО предлагают микрозаймы онлайн без отказа даже клиентам с плохой кредитной историей. Главное условие – достижение совершеннолетия и наличие российского паспорта.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-5" className="bg-white rounded-lg shadow-md border-0">
               <AccordionTrigger className="px-6 py-4 text-left text-lg font-semibold hover:no-underline">
-                Что делать, если не могу вовремя вернуть займ?
+                Для чего предназначены микрозаймы?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                Обязательно свяжитесь с нами до даты платежа. Мы предложим варианты 
-                реструктуризации или продления займа на выгодных условиях.
+                Микрозайм предназначен для краткосрочных финансовых нужд. Не стоит использовать их для покрытия регулярных расходов или крупных покупок. Берите в долг только ту сумму, которую сможете вернуть в установленный срок.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-6" className="bg-white rounded-lg shadow-md border-0">
               <AccordionTrigger className="px-6 py-4 text-left text-lg font-semibold hover:no-underline">
-                Работаете ли вы с плохой кредитной историей?
+                Как быстро можно получить микрозайм?
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4 text-gray-600">
-                Да, мы рассматриваем заявки клиентов с различной кредитной историей. 
-                Каждая заявка оценивается индивидуально.
+                Получить микрозайм онлайн на карту сегодня проще, чем когда-либо. Рассмотрение заявки занимает от 5 до 15 минут, а деньги поступают на карту мгновенно после одобрения.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
         </div>
       </section>
 
-      {/* Безопасность */}
-      <section id="security" className="py-20 px-4 bg-gradient-to-r from-blue-50 to-indigo-50">
-        <div className="container mx-auto max-w-6xl">
-          <h3 className="text-4xl font-bold text-center text-gray-900 mb-12">
-            Безопасность и защита данных
-          </h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center border-0 shadow-lg bg-white hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <Icon name="Shield" className="text-blue-600" size={32} />
-                </div>
-                <CardTitle className="text-xl">SSL-шифрование</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Все данные передаются по защищенному соединению с 256-битным шифрованием
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-0 shadow-lg bg-white hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <div className="mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                  <Icon name="Lock" className="text-green-600" size={32} />
-                </div>
-                <CardTitle className="text-xl">Защита данных</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Персональные данные хранятся согласно ФЗ-152 "О персональных данных"
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-0 shadow-lg bg-white hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <div className="mx-auto w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                  <Icon name="FileCheck" className="text-purple-600" size={32} />
-                </div>
-                <CardTitle className="text-xl">Лицензия ЦБ РФ</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Работаем на основании лицензии Центрального Банка Российской Федерации
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="mt-12 text-center">
-            <div className="bg-white rounded-xl p-8 shadow-lg max-w-3xl mx-auto">
-              <h4 className="text-2xl font-bold text-gray-900 mb-4">Ваши данные в безопасности</h4>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Мы используем банковские стандарты защиты информации. Ваши персональные 
-                данные не передаются третьим лицам и используются только для оценки 
-                заявки на микрозайм.
-              </p>
-              <div className="flex justify-center items-center space-x-8 mt-6">
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" className="text-green-500" size={20} />
-                  <span className="text-gray-700">Защищено 24/7</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" className="text-green-500" size={20} />
-                  <span className="text-gray-700">Не передаем данные</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" className="text-green-500" size={20} />
-                  <span className="text-gray-700">Соответствие ГОСТ</span>
-                </div>
-              </div>
-            </div>
+      {/* Заключение */}
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">Заключение</h2>
+          <div className="bg-white rounded-xl p-8 shadow-lg">
+            <p className="text-lg text-gray-600 mb-6">
+              Микрозаймы – это современный финансовый инструмент, который помогает быстро решить временные денежные трудности. Главное – выбирать проверенные компании и ответственно подходить к возврату средств.
+            </p>
+            <p className="text-lg text-gray-600 mb-6">
+              Помните: микрозайм предназначен для краткосрочных финансовых нужд. Не стоит использовать их для покрытия регулярных расходов или крупных покупок. Берите в долг только ту сумму, которую сможете вернуть в установленный срок.
+            </p>
+            <p className="text-xl font-semibold text-gray-900">
+              Получить микрозайм онлайн на карту сегодня проще, чем когда-либо. Воспользуйтесь нашим сервисом сравнения предложений и выберите оптимальные условия для ваших потребностей.
+            </p>
           </div>
         </div>
       </section>
